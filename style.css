@@ -816,6 +816,14 @@ h3 {
   text-align: center;
 }
 
+.final-cta .section-label {
+  margin-bottom: 18px;
+  padding: 7px 14px;
+  color: #061200;
+  font-size: 14px;
+  box-shadow: 5px 5px 0 rgba(184, 255, 25, 0.22);
+}
+
 .final-cta .cta-button {
   margin: 18px auto 12px;
 }
