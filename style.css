@@ -586,6 +586,8 @@ h3 {
 }
 
 .next-card {
+  position: relative;
+  overflow: hidden;
   display: grid;
   gap: 22px;
   padding: 24px;
@@ -594,6 +596,37 @@ h3 {
   background: var(--white);
   box-shadow: 10px 10px 0 var(--acid);
   margin-bottom: 30px;
+}
+
+.next-card-limited {
+  padding-top: 34px;
+}
+
+.remaining-ribbon {
+  position: absolute;
+  top: 5px;
+  right: -40px;
+  z-index: 1;
+  display: flex;
+  width: 153px;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transform: rotate(35deg);
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
+  background: #e5162f;
+  color: var(--white);
+  /* box-shadow: 0 4px 0 #111; */
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.remaining-ribbon strong {
+  font-size: 25px;
+  font-weight: 900;
 }
 
 .next-title p {
