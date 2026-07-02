@@ -668,6 +668,21 @@ h3 {
   font-weight: 900;
 }
 
+.next-note {
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  max-width: calc(100% - 32px);
+  margin: 0;
+  padding: 3px 7px;
+  background: var(--white);
+  color: #e5162f;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-align: right;
+}
+
 .price-box {
   display: grid;
   gap: 18px;
