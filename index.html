@@ -59,6 +59,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23050505'/%3E%3Ctext x='32' y='46' font-family='Arial Black,sans-serif' font-size='40' font-weight='900' fill='%23b8ff19' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -73,6 +75,11 @@
         <p class="hero-kicker">ENTER TOYODA GOLF CAMP</p>
         <h1>動画で見ていたプレーを、同じコースで体感する2日間</h1>
         <p class="hero-copy">ラウンド、練習、トレーニングから振り返りまで、エンター豊田と、仲間と一緒に自分のゴルフを見直す合宿です。</p>
+        <div class="hero-badges">
+          <span>次回 8/31(月)〜9/1(火)開催</span>
+          <span>残り3枠</span>
+          <span>最大9名の少人数制</span>
+        </div>
       </div>
     </section>
 
@@ -92,21 +99,36 @@
     </section>
 
     <section class="section enter-section section-dark">
-      <div class="section-inner enter-profile">
-        <div class="enter-photo">
-          <img src="img/enter.jpg" alt="エンター豊田">
-          <span>エンター豊田</span>
-        </div>
-        <div class="enter-copy">
-          <p class="section-label">MONSTER</p>
-          <h2> エンター豊田と過ごす2日間</h2>
-          <p class="section-lead">        
-            茨城県出身。ドラコン日本一の実績を持ち、現在は競技ゴルフにも挑戦中。
-            豪快なプレーだけでなく、ラウンド中の考え方やミスした後の立て直し方、
-            ゴルフと本気で向き合う姿勢も魅力のひとつです。
-            MONSTER合宿では、動画だけでは伝わりきらない一打の迫力や判断の理由を、
-            すぐ近くで感じることができます。
-          </p>
+      <div class="section-inner">
+        <p class="section-label">MONSTERS</p>
+        <h2>合宿を率いるMONSTERたち</h2>
+        <p class="section-lead">MONSTER合宿では、一緒に回るコーチを「MONSTER」と呼んでいます。開催回ごとに登場するMONSTERと、朝から晩までゴルフ漬けの2日間を過ごします。</p>
+        <div class="monster-grid">
+          <article class="monster-card">
+            <div class="monster-photo">
+              <img src="img/enter.jpg" alt="エンター豊田" loading="lazy" decoding="async">
+              <span>エンター豊田</span>
+            </div>
+            <div class="monster-copy">
+              <p class="monster-tag">ドラコン日本一</p>
+              <p>茨城県出身。ドラコン日本一の実績を持ち、現在は競技ゴルフにも挑戦中。豪快なプレーだけでなく、ラウンド中の考え方やミスした後の立て直し方、ゴルフと本気で向き合う姿勢も魅力のひとつです。動画だけでは伝わりきらない一打の迫力や判断の理由を、すぐ近くで感じることができます。</p>
+            </div>
+          </article>
+          <article class="monster-card">
+            <div class="monster-photo monster-photo-placeholder">
+              <!-- 写真素材が用意できたら↓のコメントを外して monster-photo-placeholder クラスを削除
+              <img src="img/sanapa.jpg" alt="木村紗奈" loading="lazy" decoding="async"> -->
+              <span>木村紗奈</span>
+            </div>
+            <div class="monster-copy">
+              <p class="monster-tag">女子プロゴルファー</p>
+              <p>「さなぱ」の愛称で知られる女子プロゴルファー。第4回のW MONSTER合宿に登場します。エンター豊田とはまた違う視点から、スイングやコースでの考え方をアドバイス。プロの技術と感覚を、同じ組の距離で体感できます。</p>
+            </div>
+          </article>
+          <article class="monster-card monster-card-next" aria-label="新しいMONSTERが続々参戦予定">
+            <span class="monster-next-label">NEXT MONSTER</span>
+            <p>新しいMONSTERも続々参戦予定。発表はLINEでお知らせします。</p>
+          </article>
         </div>
       </div>
     </section>
@@ -115,87 +137,67 @@
       <div class="section-inner">
         <p class="section-label">REAL CAMP FLOW</p>
         <h2>この合宿で実際に起きること</h2>
-        <p class="section-lead">ただラウンドするだけじゃない。
-            プレーを見て、見てもらって、聞いて、修正する。
-            朝から晩までゴルフのことだけを考える2日間です。</p>
+        <p class="section-lead">ただラウンドするだけじゃない。プレーを見て、見てもらって、聞いて、修正する。朝から晩までゴルフのことだけを考える2日間です。</p>
 
         <div class="flow-grid">
           <article>
-            <div class="flow-photo"><img src="img/6.jpg" alt="エンター豊田のプレーを間近で見ている様子"></div>
+            <div class="flow-photo"><img src="img/6.jpg" alt="エンター豊田のプレーを間近で見ている様子" loading="lazy" decoding="async"></div>
             <div class="flow-text">
               <span>01 / エンターのプレーを間近で</span>
               <h3>一打ごとの準備と判断を見る。</h3>
-              <p>            構え方、ルーティン、狙い方、
-                ミスした後の反応まで。
-                エンター豊田のリアルなプレーを、
-                同じ組で体感できます。</p>
+              <p>構え方、ルーティン、狙い方、ミスした後の反応まで。エンター豊田のリアルなプレーを、同じ組で体感できます。</p>
             </div>
           </article>
           <article>
-            <div class="flow-photo"><img src="img/1.jpg" alt="スイング指導の様子"></div>
+            <div class="flow-photo"><img src="img/1.jpg" alt="スイング指導の様子" loading="lazy" decoding="async"></div>
             <div class="flow-text">
               <span>02 / スイング指導</span>
               <h3>自分のスイングを、その場で見てもらう。</h3>
-              <p>            練習場では気づけなかったクセや、
-                コースで崩れる原因を確認。
-                今の自分のゴルフを、
-                実際のプレーと練習の中で見直します。</p>
+              <p>練習場では気づけなかったクセや、コースで崩れる原因を確認。今の自分のゴルフを、実際のプレーと練習の中で見直します。</p>
             </div>
           </article>
           <article>
-            <div class="flow-photo"><img src="img/2.jpg" alt="トレーニングの様子"></div>
+            <div class="flow-photo"><img src="img/2.jpg" alt="トレーニングの様子" loading="lazy" decoding="async"></div>
             <div class="flow-text">
               <span>03 / トレーニング</span>
               <h3>飛距離と再現性を支える体の動きを知る。</h3>
-              <p>飛距離、安定感、再現性。
-                ゴルフの土台になる体の動きを確認しながら、
-                普段のクセや使い方を整理していきます。</p>
+              <p>飛距離、安定感、再現性。ゴルフの土台になる体の動きを確認しながら、普段のクセや使い方を整理していきます。</p>
             </div>
           </article>
           <article>
-            <div class="flow-photo"><img src="img/4.jpg" alt="クローズ後のコースでアプローチ練習をする様子"></div>
+            <div class="flow-photo"><img src="img/4.jpg" alt="クローズ後のコースでアプローチ練習をする様子" loading="lazy" decoding="async"></div>
             <div class="flow-text">
               <span>04 / コースアプローチ練習</span>
               <h3>静かなコースで、距離感を磨く。</h3>
-              <p>       芝、傾斜、空気感。
-                練習場では分からない感覚を、
-                クローズ後の本番コースで確認。</p>
+              <p>芝、傾斜、空気感。練習場では分からない感覚を、クローズ後の本番コースで確認。</p>
             </div>
           </article>
           <article>
-            <div class="flow-photo"><img src="img/5.jpg" alt="ミス後にやり取りしている様子"></div>
+            <div class="flow-photo"><img src="img/5.jpg" alt="ミス後にやり取りしている様子" loading="lazy" decoding="async"></div>
             <div class="flow-text">
               <span>05 / ミス後のやり取り</span>
               <h3>ミスの後に、次の一打をどう考えるか。</h3>
-              <p>            なぜミスになったのか。
-                次はどう考えるのか。
-                ラウンド中だからこそ分かる判断を、
-                その場で一緒に整理します。</p>
+              <p>なぜミスになったのか。次はどう考えるのか。ラウンド中だからこそ分かる判断を、その場で一緒に整理します。</p>
             </div>
           </article>
           <article>
-            <div class="flow-photo"><img src="img/3.jpg" alt="合宿中の食事の様子"></div>
+            <div class="flow-photo"><img src="img/3.jpg" alt="合宿中の食事の様子" loading="lazy" decoding="async"></div>
             <div class="flow-text">
               <span>06 / 食事</span>
               <h3>しっかり動いたあとは、しっかり食べる。</h3>
-              <p>            1泊2日4食付き。
-                ラウンド後も自然とゴルフの話になる。
-                それも、この合宿の空気感です。</p>
+              <p>1泊2日4食付き。ラウンド後も自然とゴルフの話になる。それも、この合宿の空気感です。</p>
             </div>
           </article>
           <article>
-            <div class="flow-photo"><img src="img/7.JPG" alt="夕食・ゴルフトークの様子"></div>
+            <div class="flow-photo"><img src="img/7.JPG" alt="夕食・ゴルフトークの様子" loading="lazy" decoding="async"></div>
             <div class="flow-text">
               <span>07 / ゴルフトーク</span>
               <h3>食事や移動中にも、自然に質問できる。</h3>
-              <p>            少人数だから、
-                気になったことをそのまま聞ける。
-                動画では見えない話まで、
-                自然と飛び交います。</p>
+              <p>少人数だから、気になったことをそのまま聞ける。動画では見えない話まで、自然と飛び交います。</p>
             </div>
           </article>
           <article>
-            <div class="flow-photo"><img src="img/8.jpg" alt="合宿で参加者同士が交流している様子"></div>
+            <div class="flow-photo"><img src="img/8.jpg" alt="合宿で参加者同士が交流している様子" loading="lazy" decoding="async"></div>
             <div class="flow-text">
               <span>08 / 仲間ができる</span>
               <h3>同じ熱量でゴルフを話せる仲間と出会う。</h3>
@@ -215,12 +217,11 @@
             <span>30代男性</span>
           </article>
           <article>
-            <p> 「YouTubeで見ていた時より、
-                何倍も細かく考えてゴルフしてるのが分かりました。」</p>
-                <span>20代男性</span>
+            <p>「YouTubeで見ていた時より、何倍も細かく考えてゴルフしてるのが分かりました。」</p>
+            <span>20代男性</span>
           </article>
           <article>
-            <p>          「ミスした後に次をどう考えるかを聞けたのが一番勉強になりました。」</p>
+            <p>「ミスした後に次をどう考えるかを聞けたのが一番勉強になりました。」</p>
             <span>50代男性</span>
           </article>
         </div>
@@ -272,6 +273,53 @@
         <p class="section-label">NEXT CAMP</p>
         <h2>次回の開催はこちら</h2>
         <div class="next-card next-card-limited">
+          <div class="remaining-ribbon" aria-label="残り3枠">
+            <strong>残り3枠</strong>
+          </div>
+          <div class="next-title">
+            <p>第4回</p>
+            <h3>エンター＆さなぱのW MONSTER合宿</h3>
+          </div>
+          <dl class="event-details">
+            <div>
+              <dt>開催日</dt>
+              <dd>2026年8月31日（月）〜9月1日（火）</dd>
+            </div>
+            <div>
+              <dt>会場</dt>
+              <dd>ウィンザーパークゴルフ&カントリークラブ</dd>
+            </div>
+            <div>
+              <dt>料金</dt>
+              <dd>69,000円（税込）</dd>
+            </div>
+          </dl>
+          <p class="next-note">※木村紗奈プロの参加は初日のみとなります。</p>
+        </div>
+        <div class="next-card next-card-limited next-card-closed">
+            <div class="remaining-ribbon" aria-label="開催終了">
+              <strong>開催終了</strong>
+            </div>
+            <div class="next-title">
+              <p>第3回</p>
+              <h3>エンター豊田のMONSTER合宿</h3>
+            </div>
+            <dl class="event-details">
+              <div>
+                <dt>開催日</dt>
+                <dd>2026年7月23日（木）〜24日（金）</dd>
+              </div>
+              <div>
+                <dt>会場</dt>
+                <dd>ウィンザーパークゴルフ&カントリークラブ</dd>
+              </div>
+              <div>
+                <dt>料金</dt>
+                <dd>64,000円（税込）</dd>
+              </div>
+            </dl>
+          </div>
+        <div class="next-card next-card-limited next-card-closed">
           <div class="remaining-ribbon" aria-label="開催終了">
             <strong>開催終了</strong>
           </div>
@@ -294,53 +342,6 @@
             </div>
           </dl>
         </div>
-        <div class="next-card next-card-limited">
-            <div class="remaining-ribbon" aria-label="残り1枠">
-              <strong>残り1枠</strong>
-            </div>
-            <div class="next-title">
-              <p>第3回</p>
-              <h3>エンター豊田のMONSTER合宿</h3>
-            </div>
-            <dl class="event-details">
-              <div>
-                <dt>開催日</dt>
-                <dd>2026年7月23日（木）〜24日（金）</dd>
-              </div>
-              <div>
-                <dt>会場</dt>
-                <dd>ウィンザーパークゴルフ&カントリークラブ</dd>
-              </div>
-              <div>
-                <dt>料金</dt>
-                <dd>64,000円（税込）</dd>
-              </div>
-            </dl>
-          </div>
-        <div class="next-card next-card-limited">
-          <div class="remaining-ribbon" aria-label="残り4枠">
-            <strong>残り4枠</strong>
-          </div>
-          <div class="next-title">
-            <p>第4回</p>
-            <h3>エンター＆さなぱのW MONSTER合宿</h3>
-          </div>
-          <dl class="event-details">
-            <div>
-              <dt>開催日</dt>
-              <dd>2026年8月31日（月）〜9月1日（火）</dd>
-            </div>
-            <div>
-              <dt>会場</dt>
-              <dd>ウィンザーパークゴルフ&カントリークラブ</dd>
-            </div>
-            <div>
-              <dt>料金</dt>
-              <dd>69,000円（税込）</dd>
-            </div>
-          </dl>
-          <p class="next-note">※木村紗奈プロの参加は初日のみとなります。</p>
-        </div>
       </div>
     </section>
 
@@ -354,8 +355,7 @@
           <div class="price-main">
             <p>参加費（税込）</p>
             <strong>64,000円〜</strong>
-            <em>週末料金などにより変動します。2ラウンド、宿泊、4食、
-                各種練習、反省会まで含まれています。<br /> ※食事やお飲み物などの追加料金がかかる際は別途ご精算いただきます。</em>
+            <em>週末料金などにより変動します。2ラウンド、宿泊、4食、各種練習、反省会まで含まれています。<br>※食事やお飲み物などの追加料金がかかる際は別途ご精算いただきます。</em>
           </div>
           <div class="included">
             <h3>料金に含まれるもの</h3>
@@ -408,8 +408,7 @@
       <div class="section-inner">
         <p class="section-label">LIMITED</p>
         <h2>最大9名。近い距離で回るための人数です。</h2>
-        <p class="large-copy">      大人数ではなく、
-            一人一人のプレーを近い距離で見られる人数に絞って開催しています。</p>
+        <p class="large-copy">大人数ではなく、一人一人のプレーを近い距離で見られる人数に絞って開催しています。</p>
         <div class="number-callout">
           <span>MAX</span>
           <strong>9</strong>

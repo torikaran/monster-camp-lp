@@ -1,5 +1,5 @@
 const revealTargets = document.querySelectorAll(
-  ".section-inner, .flow-grid article, .voice-grid article, .next-card, .price-box, .venue-card, .number-callout"
+  ".section-inner, .monster-card, .flow-grid article, .voice-grid article, .next-card, .price-box, .venue-card, .number-callout"
 );
 
 if ("IntersectionObserver" in window) {
