@@ -311,6 +311,10 @@ h3 {
   margin: 0 auto;
 }
 
+.recruiting-notice-inner + .recruiting-notice-inner {
+  margin-top: 14px;
+}
+
 .recruiting-notice-label {
   padding: 4px 8px;
   background: var(--acid);
